@@ -1,0 +1,32 @@
+{
+  "name": "aws-wave",
+  "version": "1.0.0",
+  "description": "AWS Lambda Microframework",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/it-gorillaz/aws-wave.git"
+  },
+  "keywords": [
+    "AWS",
+    "Lambda",
+    "Microframework",
+    "Serverless"
+  ],
+  "author": "tommelo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/it-gorillaz/aws-wave/issues"
+  },
+  "homepage": "https://github.com/it-gorillaz/aws-wave#readme",
+  "dependencies": {
+    "http-status-codes": "^1.2.0",
+    "joi": "^10.6.0"
+  }
+}
