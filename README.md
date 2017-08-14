@@ -2,7 +2,7 @@
 AWS Lambda Microframework
 
 ## About AWS Wave
-AWS Wave is a microframework that makes it easier to develop rest api's using the aws lambda function and api gateway. It attempts to make the develpment faster by easing common tasks, such as:
+AWS Wave is a microframework that makes it easier to develop rest api's using AWS Lambda Functions and API Gateway. It attempts to make the develpment faster by easing common tasks, such as:
 
  - Exception handling
  - Request body deserialization
