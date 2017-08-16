@@ -37,8 +37,8 @@ class PostUserHandler extends AbstractRequestHandler {
       this.cors('*');
     }
         
-    execute(body, context) {
-      return { message: 'Hello from aws-wave' };
+    execute(body, context, callback) {
+      callback({ message: 'Hello from aws-wave' });
     }
 }
 
@@ -86,8 +86,8 @@ class PhoneConfirmationHandler extends AbstractRequestHandler {
       this.cors('*');
     }
         
-    execute(body, context) {
-      return { message: 'The request body is valid!' };
+    execute(body, context, callback) {
+      callback({ message: 'The request body is valid!' });
     }
 }
 
@@ -160,8 +160,8 @@ class MyHandler extends AbstractRequestHandler {
       this.cors('*');
     }
         
-    execute(body, context) {
-      return { message: 'The request body is valid!' };
+    execute(body, context, callback) {
+      callback({ message: 'The request body is valid!' });
     }
     
     resolveRequestBodyValidator() {
@@ -240,12 +240,12 @@ class PostUserHandler extends AbstractRequestHandler {
       this.cors('*');
     }
         
-    execute(body, context) {
+    execute(body, context, callback) {
       // any validation
       if (body.hasPermission)
-        throw new UnauthorizedException({'The user has no permission'});
+        return callback(new UnauthorizedException({'The user has no permission'}));
         
-      return { message: 'The user has permission'};
+      callback({ message: 'The user has permission'});
     }
 }
 
