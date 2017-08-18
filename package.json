@@ -1,6 +1,6 @@
 {
   "name": "aws-wave",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "AWS Lambda Microframework",
   "main": "index.js",
   "directories": {
