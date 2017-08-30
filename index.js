@@ -90,9 +90,17 @@ const Wave = {
     RequestBodyValidator: require('./lib/validator/request-body-validator'),
 
     /**
-     * Handler
+     * Handlers
      */
-    AbstractRequestHandler: require('./lib/handler/abstract-request-handler')
+    AbstractRequestHandler      : require('./lib/handler/abstract-request-handler'),
+    AbstractAPIGatewayAuthorizer: require('./lib/auth/abstract-api-gateway-authorizer'),
+    
+    /**
+     * Utils
+     */
+    AuthPolicyBuilder: require('./lib/auth/auth-policy-builder'),
+    PolicyEffect     : require('./lib/auth/policy-effect'),
+    Arn              : require('./lib/utils/arn')
 }
 
 module.exports = Wave;
